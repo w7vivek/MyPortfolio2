@@ -1,4 +1,4 @@
-import React, { useState , useEffect } from 'react'
+import React, { useState, useEffect } from "react";
 import profile_image from "./profile_image.jpeg";
 import "./s.css";
 
@@ -21,11 +21,10 @@ export default function Portfolio() {
         <div className="main">
           <div className="conatiner">
             <div className="contobjec">
-              {/* BUTTON */}
-               <button onClick={() => setIsDarkMode(!isDarkMode)}>
-        {isDarkMode ? " " : " "}
-         <i className="fa-solid fa-circle-half-stroke"></i>
-      </button>
+              {/* Theme Toggle Button */}
+              <button onClick={() => setIsDarkMode(!isDarkMode)}>
+                <i>⚪</i>
+              </button>
 
               <div className="status">
                 <span className="dot"></span>
@@ -40,9 +39,9 @@ export default function Portfolio() {
             <div className="about">
               <h1 className="int">About Me</h1>
               <h3>
-                Vivek is a skilled Frontend web developer specializing in
-                JavaScript and React.js. Explore his projects and expertise to
-                discover innovative solutions for your web development needs
+                Vivek is a skilled Full-Stack web developer specializing in JavaScript,
+                React.js, and backend technologies. Explore his projects and expertise to
+                discover innovative solutions for your web development needs.
               </h3>
 
               <div className="about_in">
@@ -51,7 +50,7 @@ export default function Portfolio() {
                   <h3>Web Developer &amp; Product Designer</h3>
                 </div>
                 <div className="college">
-                  <h3>Full Stack Developer && Software Developer</h3>
+                  <h3>Full Stack Developer &amp;&amp; Software Developer</h3>
                   <h3>GLS University</h3>
                 </div>
               </div>
@@ -76,7 +75,7 @@ export default function Portfolio() {
           <div className="interest">
             <div className="myinterest">
               <h2 className="int">Interest</h2>
-              <ul className="interestclassName">
+              <ul className="interestclass">
                 <li className="interestlist">Coding</li>
                 <li className="interestlist">Gaming</li>
                 <li className="interestlist">Editing</li>
@@ -114,13 +113,42 @@ export default function Portfolio() {
                       </a>
                     </p>
                   </div>
-                  {/* <div className="cert-card">Certificate 2</div> */}
                 </div>
+              </div>
+            </div>
+
+            {/* NEW PROJECTS CARD */}
+            <div className="projects">
+              <h1 className="int">Projects</h1>
+              <div className="project-list">
+                <div className="project-card">
+                  <h3>Portfolio Website</h3>
+                  <p>
+                     A React app that converts text to uppercase, lowercase,
+                    counts words/characters, and offers quick clear actions and many more....
+                  </p>
+                  <a href="https://w7vivek.github.io/Text_Converter/">
+                    GitHub
+                  </a>
+                </div>
+
+                <div className="project-card">
+                  <h3>ProductHub</h3>
+                  <p>
+                    E-commerce demo with React Router and GitHub Pages
+                    deployment.
+                  </p>
+                  <a href="https://w7vivek.github.io/ProductHub/">
+                    GitHub
+                  </a>
+                </div>
+
+                {/* Add more projects here */}
               </div>
             </div>
           </div>
         </div>
-      </div> 
+      </div>
     </>
   );
 }
