@@ -122,7 +122,7 @@ export default function Portfolio() {
               <h1 className="int">Projects</h1>
               <div className="project-list">
                 <div className="project-card">
-                  <h3>Portfolio Website</h3>
+                  <h3>Text Converter</h3>
                   <p>
                      A React app that converts text to uppercase, lowercase,
                     counts words/characters, and offers quick clear actions and many more....
